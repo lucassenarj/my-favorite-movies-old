@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom'
+import { createBrowserHistory } from 'history';
+import { HomePage } from './pages'
 import * as serviceWorker from './serviceWorker';
 
 const app = (
-  <h1>React app</h1>
+  <BrowserRouter history={createBrowserHistory()} basename="/">
+    <Switch>
+      <Route path="/" component={HomePage} exact={true} />
+    </Switch>
+  </BrowserRouter>
 )
 
 ReactDOM.render(app, document.getElementById('root'));
