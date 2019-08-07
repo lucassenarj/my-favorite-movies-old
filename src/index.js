@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history';
 import Layout from './components/layout/Layout'
 import { HomePage, MovieDetailsPage } from './pages'
