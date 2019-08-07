@@ -5,6 +5,10 @@ import { createBrowserHistory } from 'history';
 import { HomePage } from './pages'
 import * as serviceWorker from './serviceWorker';
 
+import { getPopularMovies } from './services/movies'
+
+getPopularMovies().then(results => console.log(results))
+
 const app = (
   <BrowserRouter history={createBrowserHistory()} basename="/">
     <Switch>
