@@ -6,12 +6,8 @@ import Layout from './components/layout/Layout'
 import { HomePage, MovieDetailsPage } from './pages'
 import * as serviceWorker from './serviceWorker';
 
-import { getPopularMovies } from './services/movies'
-
-getPopularMovies().then(results => console.log(results))
-
 const app = (
-  <BrowserRouter history={createBrowserHistory()} basename="/">
+  <BrowserRouter history={createBrowserHistory()} basename="/my-favorite-movies/">
     <Layout>
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
