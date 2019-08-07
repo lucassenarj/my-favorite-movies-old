@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history';
-import { HomePage } from './pages'
+import Layout from './components/layout/Layout'
+import { HomePage, MovieDetailsPage } from './pages'
 import * as serviceWorker from './serviceWorker';
 
 import { getPopularMovies } from './services/movies'
@@ -11,9 +12,12 @@ getPopularMovies().then(results => console.log(results))
 
 const app = (
   <BrowserRouter history={createBrowserHistory()} basename="/">
-    <Switch>
-      <Route path="/" component={HomePage} exact={true} />
-    </Switch>
+    <Layout>
+      <Switch>
+        <Route path="/" component={HomePage} exact={true} />
+        <Route path="/movies/:id" component={MovieDetailsPage} />
+      </Switch>
+    </Layout>
   </BrowserRouter>
 )
 
