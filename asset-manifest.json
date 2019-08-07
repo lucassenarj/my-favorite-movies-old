@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/my-favorite-movies/static/js/main.de2dae10.chunk.js",
+    "main.js.map": "/my-favorite-movies/static/js/main.de2dae10.chunk.js.map",
+    "runtime~main.js": "/my-favorite-movies/static/js/runtime~main.e9fc2f1e.js",
+    "runtime~main.js.map": "/my-favorite-movies/static/js/runtime~main.e9fc2f1e.js.map",
+    "static/js/2.6bc95c39.chunk.js": "/my-favorite-movies/static/js/2.6bc95c39.chunk.js",
+    "static/js/2.6bc95c39.chunk.js.map": "/my-favorite-movies/static/js/2.6bc95c39.chunk.js.map",
+    "index.html": "/my-favorite-movies/index.html",
+    "precache-manifest.6a63052f7b78ad02bc4c9d6ba21b1fa1.js": "/my-favorite-movies/precache-manifest.6a63052f7b78ad02bc4c9d6ba21b1fa1.js",
+    "service-worker.js": "/my-favorite-movies/service-worker.js"
+  }
+}
